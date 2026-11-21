@@ -181,6 +181,9 @@ td:nth-child(3) {
 .main-row figure img {
   display: block;
   width: 100%;
+  max-width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
   border: 1px solid var(--ink);
 }
 
@@ -248,7 +251,19 @@ figcaption {
 .place img {
   display: block;
   width: 100%;
+  max-width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  object-position: center;
   border: 1px solid var(--ink);
+}
+
+#bistro57 .place img {
+  object-position: center 30%;
+}
+
+.place > * {
+  min-width: 0;
 }
 
 .place .info p {
