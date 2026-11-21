@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback | DTU EATS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body id="top">
+
+    <header>
+        <h1>Campus Food &amp; Budgeting Directory</h1>
+        <nav>
+            <a href="index.html">Home</a> |
+            <a href="budget.html">Budget Menu Guide</a> |
+            <a href="places.html">Places</a> |
+            <a href="feedback.html">Feedback</a> |
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <hr>
+
+    <section id="feedback">
+        <h2>Share Your Feedback</h2>
+
+        <form method="post">
+
+            <fieldset>
+                <legend>Personal details</legend>
+
+                <div class="field">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+
+                <div class="field">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="field">
+                    <label for="age">Age</label>
+                    <input type="number" id="age" name="age" min="1" max="99">
+                </div>
+
+                <div class="choices">
+                    <span class="label">Gender</span>
+                    <label><input type="radio" name="gender" value="male"> M</label>
+                    <label><input type="radio" name="gender" value="female"> F</label>
+                    <label><input type="radio" name="gender" value="other"> Other</label>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Your experience</legend>
+
+                <div class="field">
+                    <label for="outlet">Outlet</label>
+                    <select id="outlet" name="outlet">
+                        <option value="">-- Select --</option>
+                        <option value="hims-cafe">HIMS Cafe</option>
+                        <option value="raydee">Raydee Cafe</option>
+                        <option value="bistro57">Bistro 57</option>
+                        <option value="deltech">Deltech DTU</option>
+                        <option value="central-canteen">Central Canteen</option>
+                        <option value="dazzle-dine">Dazzle Dine</option>
+                        <option value="udupi">Udupi Cafe</option>
+                    </select>
+                </div>
+
+                <div class="choices">
+                    <span class="label">Rating</span>
+                    <label><input type="radio" name="rating" value="1"> ★</label>
+                    <label><input type="radio" name="rating" value="2"> ★★</label>
+                    <label><input type="radio" name="rating" value="3"> ★★★</label>
+                    <label><input type="radio" name="rating" value="4" checked> ★★★★</label>
+                    <label><input type="radio" name="rating" value="5"> ★★★★★</label>
+                </div>
+
+                <div class="choices">
+                    <span class="label">I liked</span>
+                    <label><input type="checkbox" name="liked" value="taste"> Taste</label>
+                    <label><input type="checkbox" name="liked" value="price"> Price</label>
+                    <label><input type="checkbox" name="liked" value="cleanliness"> Cleanliness</label>
+                </div>
+
+                <div class="field">
+                    <label for="comments">Comments</label>
+                    <textarea id="comments" name="comments" rows="5" placeholder="Tell us more..."></textarea>
+                </div>
+            </fieldset>
+
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+
+        </form>
+
+        <a href="#top" class="back-to-top">Back to Top ↑</a>
+    </section>
+
+</body>
+</html>

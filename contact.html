@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | DTU EATS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body id="top">
+
+    <header>
+        <h1>Campus Food &amp; Budgeting Directory</h1>
+        <nav>
+            <a href="index.html">Home</a> |
+            <a href="budget.html">Budget Menu Guide</a> |
+            <a href="places.html">Places</a> |
+            <a href="feedback.html">Feedback</a> |
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <hr>
+
+    <section id="suggest">
+        <h2>Suggest a New Place</h2>
+
+        <form method="post">
+
+            <div class="field">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+
+            <div class="field">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="field">
+                <label for="phone">Phone</label>
+                <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" placeholder="10-digit number">
+            </div>
+
+            <div class="field">
+                <label for="address">Address of the place</label>
+                <input type="text" id="address" name="address">
+            </div>
+
+            <div class="field">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" minlength="6" required>
+            </div>
+
+            <div class="field">
+                <label for="type">Type of place</label>
+                <select id="type" name="type">
+                    <option value="">-- Select --</option>
+                    <option value="canteen">Canteen</option>
+                    <option value="cafe">Café</option>
+                    <option value="juice">Juice Bar</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+
+            <div class="field">
+                <label for="comments">Why should we add it?</label>
+                <textarea id="comments" name="comments" rows="5"></textarea>
+            </div>
+
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+
+        </form>
+    </section>
+
+    <hr>
+
+    <section id="reach-us">
+        <h2>Reach us</h2>
+        <ul class="contact-list">
+            <li>📧 <a href="mailto:eats@college.edu">eats@college.edu</a></li>
+            <li>📞 <a href="tel:+911234567890">+91 12345 67890</a></li>
+            <li>⬇ <a href="campus-map.pdf" download>Download campus map (PDF)</a></li>
+        </ul>
+        <a href="#top" class="back-to-top">Back to Top ↑</a>
+    </section>
+
+</body>
+</html>
